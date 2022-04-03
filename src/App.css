@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+.nowTime {
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nowTime::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 80px;
+  border-radius: 3px;
+  background-color: #e1a21e;
+  /* center horizontally */
+  align-self: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nowTime::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 800px; /* calculate height */
+  background-color: #e1a21e;
+  /* center horizontally */
+  align-self: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.channel-row {
+  height: 80px;
   display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.channel-logo {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  flex-direction: column;
+}
+
+.channel-header {
+  height: 80px;
+  border: 1px solid #393939;
+  background-color: #212322;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.guide-header {
+  height: 80px;
+  border: 1px solid #393939;
+  width:  var(--day-length);
+  background-color: #212322;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.channel-time-row {
+  height: 80px;
+  border: 1px solid #393939;
+  background-color: #212322;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.guide-time-row {
+  height: 80px;
+  border: 1px solid #393939;
+  width:  var(--day-length);
+  background-color: #212322;
+  box-sizing: border-box;
+}
+
+.timeDay {
+  min-width:  var(--day-length);
+}
+
+.time120 {
+  width:  calc(var(--unit-time-length) * 120);
+}
+
+.time90 {
+  width:  calc(var(--unit-time-length) * 90);
+}
+
+.time60 {
+  width:  var(--hour-length);
+}
+
+.timeDefault {
+  width:  var(--hour-length);
+}
+
+.time50 {
+  width:  calc(var(--unit-time-length) * 50);
+}
+
+.time45 {
+  width:  calc(var(--unit-time-length) * 45);
+}
+
+.time40 {
+  width:  calc(var(--unit-time-length) * 40);
+}
+
+.time35 {
+  width:  calc(var(--unit-time-length) * 35);
+}
+
+.time30 {
+  width:  calc(var(--unit-time-length) * 30);
+}
+
+.time25 {
+  width:  calc(var(--unit-time-length) * 25);
+}
+
+.time20 {
+  width:  calc(var(--unit-time-length) * 20);
+}
+
+.time15 {
+  width:  calc(var(--unit-time-length) * 15);
+}
+
+.time10 {
+  width:  calc(var(--unit-time-length) * 10);
+}
+
+.time5 {
+  width:  calc(var(--unit-time-length) * 5);
+}
+
+.time1 {
+  width:  calc(var(--unit-time-length));
 }

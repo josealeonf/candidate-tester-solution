@@ -1,0 +1,12 @@
+.day_row {
+  width: var(--day-length);
+}
+
+.channel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}

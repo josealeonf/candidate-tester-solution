@@ -1,0 +1,36 @@
+.guide_container {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  min-height: calc(100vh - 110px);
+}
+
+.channel_container {
+  width:  var(--day-length);
+  overflow: hidden;
+  min-width: 120px;
+  width: 120px;
+}
+.channel_data {
+  overflow: auto;
+  background-color: #212322;
+}
+
+.content_container {
+  width:  var(--day-length);
+  overflow: hidden;
+}
+
+.content_data {
+  overflow: auto;
+  width: 100%;
+}
+
+.nowButton {
+  position: fixed !important;
+  background-color: #E1A21E !important;
+  color: #FFFFFF !important;
+  bottom: 100px;
+  right: 50px;
+}
+

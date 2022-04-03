@@ -1,0 +1,19 @@
+.timeCell {
+  border-left: 1px solid #393939;
+  border-right: 1px solid #393939;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  box-sizing: border-box;
+}
+
+.headerCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 110%;
+}
+
+.headerCellHidden {
+  display: none;
+}
+
